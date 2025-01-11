@@ -1,0 +1,63 @@
+.secDeliver {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .homePage {
+        text-align: start;
+        padding: 30px;
+    }
+
+    .catdirilma {
+        padding: 30px;
+        text-align: start;
+
+    }
+}
+
+.textContainerDeliver {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    
+    .partDeliver {
+        
+        .firstPart {
+            .titleDeliver {
+                color: red;
+                font-weight: bold;
+            }
+
+            
+        }
+    }
+}
+.gray {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 110%;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #85898b;
+    margin-bottom: 10px;
+}
+.textStyle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    color: #53595c;
+    text-align: justify;
+}
+.firstPart{
+    .green{
+        color: green;
+    }
+
+}

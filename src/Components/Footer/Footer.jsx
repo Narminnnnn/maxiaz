@@ -16,8 +16,8 @@ const Footer = () => {
           <p>9:00-dan 18:00-dək </p>
           <div className="logos">
            <a target="blank" href="https://www.youtube.com/channel/UCxsIp50sKMQ-nmQVhUaFlsQ"><FaYoutube /></a> 
-           <a target="blank" href="https://www.youtube.com/channel/UCxsIp50sKMQ-nmQVhUaFlsQ"><FaFacebookF /></a> 
-           <a target="blank" href="https://www.youtube.com/channel/UCxsIp50sKMQ-nmQVhUaFlsQ"><RiInstagramFill /></a> 
+           <a className="fb" target="blank" href="https://www.facebook.com/maxi.az.shop/"><FaFacebookF /></a> 
+           <a className="ins" target="blank" href="https://www.instagram.com/maxiaz.shop/"><RiInstagramFill /></a> 
          
          
          

@@ -84,163 +84,164 @@ header {
             padding: 2rem;
             gap: 10px;
 
-            .callBack {
-                display: ;
 
-                a {
-                    font-size: 2rem;
-                    font-weight: 700;
-                    margin-right: 8px;
-                    color: inherit;
-                    word-break: break-word;
-                }
-
+            a {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-right: 8px;
+                color: inherit;
+                word-break: break-word;
             }
 
-            .callBack-info {
-                .callBack-info-message {
-                    font-size: .75rem;
-                    line-height: 14px;
-                    color: #53595c;
-                }
-            }
+        }
 
-            .callBack-info-time {
+        .callBack-info {
+            .callBack-info-message {
                 font-size: .75rem;
                 line-height: 14px;
-                font-weight: 700;
-                color: #232222;
-            }
-
-            .lang {
-                padding: 10px;
-                display: flex;
-                align-items: center;
-
-                .az {
-                    border-right: 2px solid grey;
-                    cursor: pointer;
-                }
-
-                a {
-                    color: #53595c;
-                    font-size: .875rem;
-                    line-height: 16px;
-                    text-transform: uppercase;
-                    padding: 2px;
-                    cursor: pointer;
-                }
+                color: #53595c;
             }
         }
-    }
 
-    .downHeader {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-left: 32px;
-        padding-right: 32px;
-        background-color: #3c3f42;
-        align-items: center;
-        /* padding: 20px; */
-        color: #fff;
-        height: 64px;
+        .callBack-info-time {
+            font-size: .75rem;
+            line-height: 14px;
+            font-weight: 700;
+            color: #232222;
+        }
 
-        .downContainer {
-            width: 85%;
+        .lang {
+            padding: 10px;
             display: flex;
             align-items: center;
 
-            .searchKataloq {
-                display: flex;
+            .az {
+                border-right: 2px solid grey;
+                cursor: pointer;
+            }
+
+            a {
+                color: #53595c;
+                font-size: .875rem;
+                line-height: 16px;
+                text-transform: uppercase;
+                padding: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.downHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #3c3f42;
+    align-items: center;
+    /* padding: 20px; */
+    color: #fff;
+    height: 64px;
+
+    .downContainer {
+        width: 85%;
+        display: flex;
+        align-items: center;
+
+        .searchKataloq {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            .kataloq {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 125%;
+                letter-spacing: .02em;
+                text-transform: uppercase;
+                font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                cursor: pointer;
+                padding: 20px;
                 align-items: center;
-                justify-content: start;
+                display: flex;
+                background-color: #232222;
+                height: 100%;
+                width: 314px;
 
-                .kataloq {
-                    font-weight: 500;
-                    font-size: 1rem;
-                    line-height: 125%;
-                    letter-spacing: .02em;
-                    text-transform: uppercase;
-                    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                    cursor: pointer;
-                    padding: 20px;
-                    align-items: center;
-                    display: flex;
-                    background-color: #232222;
-                    height: 100%;
-                    width: 314px;
-
-                    .grids {
-                        margin-right: 10px;
-                        font-size: 1.5rem;
-                    }
-                }
-
-                .searchContainer {
-                    display: flex;
-                    justify-content: start;
-                    margin: 0;
-                    padding: 0;
-
-                    .searchDiv {
-                        width: 590px;
-                        height: 40px;
-                        padding: 0 16px;
-                        display: flex;
-                        position: relative;
-                        border: none;
-
-                        .inp {
-                            width: 100%;
-                            height: 100%;
-                            color: #504949;
-                            font-size: .875rem;
-                            border-radius: 5px;
-                            outline: none;
-                            border: none;
-                            padding: 0 0 0 5px;
-                        }
-
-                        .search {
-                            position: absolute;
-                            color: #232222;
-                            right: 20px;
-                            padding: 10px;
-                            text-align: center;
-                            top: 50%;
-                        }
-                    }
-
+                .grids {
+                    margin-right: 10px;
+                    font-size: 1.5rem;
                 }
             }
 
-            .enter {
+            .searchContainer {
                 display: flex;
-                justify-content: space-between;
+                justify-content: start;
+                margin: 0;
+                padding: 0;
 
-                .hesab {
-                    margin-right: 10px;
-                    height: 30px;
-                    margin-left: 20px;
-                    cursor: pointer;
+                .searchDiv {
+                    width: 590px;
+                    height: 40px;
+                    padding: 0 16px;
                     display: flex;
-                    align-items: center;
-                    gap: 5px;
+                    position: relative;
+                    border: none;
 
-                    /* font-size: 19px; */
-                    .person {
-                        font-size: 25px;
+                    .inp {
+                        width: 100%;
+                        height: 100%;
+                        color: #504949;
+                        font-size: .875rem;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        padding: 0 0 0 5px;
+                    }
+
+                    .search {
+                        position: absolute;
+                        color: #232222;
+                        right: 20px;
+                        padding: 10px;
+                        text-align: center;
+                        top: 50%;
                     }
                 }
 
-                .terezi {
-                    .scales {
-                        font-size: 26px;
-                    }
-                }
+            }
+        }
 
-                .wishList {
+        .enter {
+            display: flex;
+            justify-content: space-between;
+
+            .hesab {
+                margin-right: 10px;
+                height: 30px;
+                margin-left: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                /* font-size: 19px; */
+                .person {
+                    font-size: 25px;
+                }
+            }
+
+            .terezi {
+                .scales {
+                    font-size: 26px;
+                }
+            }
+
+            .wishList {
+                a {
+                    color: #fff;
+
                     .heart {
                         font-size: 22px;
 
@@ -250,6 +251,7 @@ header {
         }
     }
 }
+
 
 .styleEnter {
     margin-right: 10px;

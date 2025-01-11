@@ -24,7 +24,15 @@ footer {
     .qrafik {
                 .logos {
             margin-top: 20px;
-
+&:hover{
+    .fb{
+                        
+        color: blue;
+  }
+  .ins{
+    color: purple;
+  }
+}
             a {
                 color: #fafafa;
                 font-size: 1rem;
@@ -35,12 +43,14 @@ footer {
 
                 &:hover {
                     color: red;
+               
+                    }
                 }
 
             }
         }
     }
-}
+
 
 .downFooter {
     width: 80%;

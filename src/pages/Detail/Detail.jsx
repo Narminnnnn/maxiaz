@@ -107,7 +107,7 @@ const Detail = () => {
                             <div className="zemanet">
                                 <CiMoneyBill /> <span className='quaranty'>Zemanat</span>
                             </div>
-                            <p>Rəsmi zəmanət. Qaytarma və dəyişdirmə - “İstehlakçıların hüquqlarının müdafiəsi haqqında” Azərbaycan Respublikası Qanununun 15-ci maddəsinə əsasən</p>
+                            <p className='resmi'>Rəsmi zəmanət. Qaytarma və dəyişdirmə - “İstehlakçıların hüquqlarının müdafiəsi haqqında” Azərbaycan Respublikası Qanununun 15-ci maddəsinə əsasən</p>
                         </div>
                     </div>
                 </div>

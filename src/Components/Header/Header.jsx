@@ -7,16 +7,17 @@ import { LiaBalanceScaleLeftSolid } from "react-icons/lia";
 import { FaRegHeart } from "react-icons/fa6";
 
 const Header = () => {
+  
   return (
     <header>
       <div className="contaierHeader">
         <div className="upHeader">
           <div className="logoNavbar">
             <div className="logo">
-              <img
+             <a href="./"><img
                 src="https://aem-elektron.az/image/cache/webp/catalog/partners/maxi-az-logo-400x300.webp"
                 alt=""
-              />
+              /></a> 
             </div>
             <nav>
               <ul>
@@ -79,7 +80,8 @@ const Header = () => {
                 <LiaBalanceScaleLeftSolid className="scales" />
               </div>
               <div className="wishList styleEnter ">
-                <FaRegHeart className="heart"/>
+                <a href="./wishlist"><FaRegHeart className="heart"/></a>
+                
               </div>
             </div>
           </div>

@@ -20,6 +20,7 @@ header {
     flex-direction: column;
 
     .upHeader {
+        height: 80px;
         width: 85%;
         display: flex;
         justify-content: space-between;
@@ -148,62 +149,110 @@ header {
         .downContainer {
             width: 85%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
 
-            .kataloq {
-                font-weight: 500;
-                font-size: 1rem;
-                line-height: 125%;
-                letter-spacing: .02em;
-                text-transform: uppercase;
-                font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                cursor: pointer;
-                padding: 20px;
-                align-items: center;
+            .searchKataloq {
                 display: flex;
-                background-color: #232222;
-                height: 100%;
-                width: 314px;
+                align-items: center;
+                justify-content: start;
 
-                .grids {
-                    margin-right: 10px;
-                    font-size: 1.5rem;
+                .kataloq {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 125%;
+                    letter-spacing: .02em;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    cursor: pointer;
+                    padding: 20px;
+                    align-items: center;
+                    display: flex;
+                    background-color: #232222;
+                    height: 100%;
+                    width: 314px;
+
+                    .grids {
+                        margin-right: 10px;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .searchContainer {
+                    display: flex;
+                    justify-content: start;
+                    margin: 0;
+                    padding: 0;
+
+                    .searchDiv {
+                        width: 590px;
+                        height: 40px;
+                        padding: 0 16px;
+                        display: flex;
+                        position: relative;
+                        border: none;
+
+                        .inp {
+                            width: 100%;
+                            height: 100%;
+                            color: #504949;
+                            font-size: .875rem;
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+                            padding: 0 0 0 5px;
+                        }
+
+                        .search {
+                            position: absolute;
+                            color: #232222;
+                            right: 20px;
+                            padding: 10px;
+                            text-align: center;
+                            top: 50%;
+                        }
+                    }
+
                 }
             }
-.searchContainer{
-    display: flex;
-    justify-content: start;
-    margin: 0;
-    padding: 0;
 
-    .searchDiv{
-        width: 590px;
-        height: 40px;
-        padding: 0 16px;
-        display: flex;
-        position: relative;
-        .inp{
-            width: 100%;
-            height: 100%;
-            color: #504949;
-            font-size: .875rem;
-            border-radius: 5px;
-        }
-        .search{
-            position: absolute;
-            color: #232222;
-            right: 20px;
-            padding: 10px;
-            text-align: center;
-            top: 50%;
-        }
-    }
-
-}
             .enter {
                 display: flex;
+                justify-content: space-between;
+
+                .hesab {
+                    margin-right: 10px;
+                    height: 30px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    /* font-size: 19px; */
+                    .person {
+                        font-size: 25px;
+                    }
+                }
+
+                .terezi {
+                    .scales {
+                        font-size: 26px;
+                    }
+                }
+
+                .wishList {
+                    .heart {
+                        font-size: 22px;
+
+                    }
+                }
             }
         }
     }
+}
+
+.styleEnter {
+    margin-right: 10px;
+    height: 10px;
+    margin-left: 10px;
 }

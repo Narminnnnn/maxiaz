@@ -6,8 +6,6 @@ import { BsPersonCircle } from "react-icons/bs";
 import { LiaBalanceScaleLeftSolid } from "react-icons/lia";
 import { FaRegHeart } from "react-icons/fa6";
 
-
-
 const Header = () => {
   return (
     <header>
@@ -58,32 +56,32 @@ const Header = () => {
         </div>
         <div className="downHeader">
           <div className="downContainer">
-            <div className="kataloq">
-              <LuLayoutGrid  className="grids"/>
-              <span className="mallar">Malların kataloqu </span>
-            </div>
-            <div className="searchContainer">
-              <div className="searchDiv">
-                <input className="inp" type="text" placeholder="Axtarış" />
-                <CiSearch  className="search"/>
+            <div className="searchKataloq">
+              <div className="kataloq">
+                <LuLayoutGrid className="grids" />
+                <span className="mallar">Malların kataloqu </span>
               </div>
-              
+              <div className="searchContainer">
+                <div className="searchDiv">
+                  <input className="inp" type="text" placeholder="Axtarış" />
+                  <CiSearch className="search" />
+                </div>
+              </div>
             </div>
+
             <div className="enter">
               <div className="hesab">
-              <BsPersonCircle />
-              <span> Hesaba giriş</span>
+                <BsPersonCircle className="person"/>
+                <span> Hesaba giriş</span>
               </div>
 
-            <div className="terezi">
-            <LiaBalanceScaleLeftSolid />
+              <div className="terezi styleEnter">
+                <LiaBalanceScaleLeftSolid className="scales" />
+              </div>
+              <div className="wishList styleEnter ">
+                <FaRegHeart className="heart"/>
+              </div>
             </div>
-            <div className="wishList">
-            <FaRegHeart />
-
-            </div>
-            </div>
-
           </div>
         </div>
       </div>

@@ -1,0 +1,133 @@
+body{
+margin: 0;
+
+}
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footerContainer {
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    color: #fff;
+    gap: 20px;
+    justify-content: space-around;
+
+    .qrafik {
+                .logos {
+            margin-top: 20px;
+
+            a {
+                color: #fafafa;
+                font-size: 1rem;
+                line-height: 19px;
+                font-size: 2rem;
+                line-height: 37px;
+                padding: 10px 10px 10px 0;
+
+                &:hover {
+                    color: red;
+                }
+
+            }
+        }
+    }
+}
+
+.downFooter {
+    width: 80%;
+    display: flex;
+    color: #fff;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+
+
+
+    .inteqral {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 23px;
+        margin-bottom: 8px;
+
+        img {
+            width: 80px;
+            height: 40px;
+            margin-right: 20px;
+        }
+    }
+
+    .master {
+        display: flex;
+
+        .visas {
+            color: #fafafa;
+            font-size: 2rem;
+            line-height: 15px;
+            /* margin-right: 3rem;  */
+        }
+
+        .visa {
+            color: #fafafa;
+            font-size: 2rem;
+            line-height: 15px;
+            margin-right: 4rem;
+        }
+
+    }
+    .uxui {
+        text-align: right;
+        display: flex;
+        align-items: center;
+
+        .ux {
+            color: #fafafa;
+            font-size: 2.5rem;
+            line-height: 15px;
+        }
+    }
+
+}
+
+.styleFootertext {
+    color: #fafafa;
+    font-size: .75rem;
+    line-height: 15px;
+    margin-right: 3rem;
+    padding-right: 2rem;
+}
+.navbar, .alici{
+h5{
+    margin-bottom: 1rem;
+    a{
+          color: #fafafa;
+            font-weight: 700;
+
+    }
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+    li{
+        a{
+            color: #fafafa;
+            font-size: 1rem;
+            line-height: 15px;
+            margin-right: 3rem;
+            padding: 0 2rem 1rem 0; 
+        }
+    }
+}
+}

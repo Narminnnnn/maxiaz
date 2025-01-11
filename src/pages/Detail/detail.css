@@ -1,0 +1,173 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.containerDetail {
+    /* background-color: red; */
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.spanlar {
+    display: flex;
+    gap: 30px;
+
+    .zemanet {
+        background-color: rgba(255, 103, 1, 0.1);
+        color: rgb(253, 106, 0);
+    }
+
+    .stok {
+        background-color: rgba(37, 174, 96, 0.1);
+        color: rgb(37, 174, 96);
+    }
+}
+
+.up {
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: .02em;
+        margin-bottom: 9px;
+        margin-top: 20px;
+    }
+
+    .stars {
+        color: rgb(219, 219, 37);
+        display: flex;
+        gap: 2px;
+
+        .rey {
+            color: black;
+            margin-left: 10px;
+        }
+    }
+}
+
+.bottom {
+    position: relative;
+
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+
+        .ihover {
+            width: 150px;
+            position: absolute;
+            top: -170px;
+            left: 145px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 0 5px;
+            display: none;
+        }
+
+        .manat {
+            font-size: 25px;
+        }
+
+        .information {
+            font-size: 25px;
+            margin-bottom: -2px;
+            cursor: pointer;
+
+            &:hover+.ihover {
+                display: block;
+            }
+        }
+    }
+
+}
+
+.quaranty {
+    font-size: 17px;
+    line-height: 125%;
+
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 32px;
+    margin-top: 10px;
+}
+
+
+
+.product-information {
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+
+}
+
+.product-slider {
+    width: 550px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

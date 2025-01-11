@@ -1,0 +1,55 @@
+.sectionOne {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.secOneContainer {
+    width: 80%; 
+    display: flex;
+}
+
+.nav {
+    ul {
+        li {
+            a {
+                gap: 10px;
+                color: #000;
+                display: flex;
+                align-items: center;
+                padding: 0 10px 0 20px;
+                margin-top: 10px;
+                font-weight: 500;
+                letter-spacing: .02em;
+                font-size: 1rem;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+.swiperSecOne {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slideSecOne  {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slideSecOne  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

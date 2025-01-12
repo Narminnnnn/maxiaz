@@ -7,6 +7,7 @@ import Detail from './pages/Detail/Detail';
 import Wishlist from './pages/WishList/Wishlist';
 import Deliver from './pages/catdirilma/Deliver';
 import About from './pages/About/About';
+// import Search from './pages/Search/Search';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/deliver' element={<Deliver />} />
         <Route path='/about' element={<About />} />
+        {/* <Route path='/search' element={<Search/>} /> */}
 
 
       </Routes>

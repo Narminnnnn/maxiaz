@@ -25,6 +25,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
+
 const Home = () => {
   return (
     <>
@@ -292,6 +293,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+    
     </>
   );
 };

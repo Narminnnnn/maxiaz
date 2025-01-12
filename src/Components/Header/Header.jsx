@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { LuLayoutGrid } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
@@ -7,7 +7,21 @@ import { LiaBalanceScaleLeftSolid } from "react-icons/lia";
 import { FaRegHeart } from "react-icons/fa6";
 
 const Header = () => {
-  
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsFixed(true); 
+      } else {
+        setIsFixed(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <header>
       <div className="contaierHeader">
@@ -55,7 +69,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="downHeader">
+        <div className={`downHeader ${isFixed ? "fixed" : ""}`}>
           <div className="downContainer">
             <div className="searchKataloq">
               <div className="kataloq">

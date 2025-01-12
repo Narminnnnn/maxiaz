@@ -1,9 +1,6 @@
-body{
-margin: 0;
-
-}
 footer {
-    height: 100%;
+    margin-top: auto;
+    height: 100% !important;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,34 +19,40 @@ footer {
     justify-content: space-around;
 
     .qrafik {
-                .logos {
+        .logos {
             margin-top: 20px;
-&:hover{
-    .fb{
-                        
-        color: blue;
-  }
-  .ins{
-    color: purple;
-  }
-}
-            a {
-                color: #fafafa;
-                font-size: 1rem;
-                line-height: 19px;
-                font-size: 2rem;
-                line-height: 37px;
-                padding: 10px 10px 10px 0;
+            font-size: 35px;
+            display: flex;
+            justify-content: space-between;
+
+            .ytb {
+                color: white;
 
                 &:hover {
                     color: red;
-               
-                    }
                 }
 
             }
+
+            .fb {
+                color: white;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+
+            .ins {
+                color: white;
+
+                &:hover {
+                    color: rgb(236, 108, 236);
+                }
+            }
+
         }
     }
+}
 
 
 .downFooter {
@@ -95,6 +98,7 @@ footer {
         }
 
     }
+
     .uxui {
         text-align: right;
         display: flex;
@@ -116,28 +120,33 @@ footer {
     margin-right: 3rem;
     padding-right: 2rem;
 }
-.navbar, .alici{
-h5{
-    margin-bottom: 1rem;
-    a{
-          color: #fafafa;
+
+.navbar,
+.alici {
+    h5 {
+        margin-bottom: 1rem;
+
+        a {
+            color: #fafafa;
             font-weight: 700;
 
-    }
-}
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 2rem;
-    li{
-        a{
-            color: #fafafa;
-            font-size: 1rem;
-            line-height: 15px;
-            margin-right: 3rem;
-            padding: 0 2rem 1rem 0; 
         }
     }
-}
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 2rem;
+
+        li {
+            a {
+                color: #fafafa;
+                font-size: 1rem;
+                line-height: 15px;
+                margin-right: 3rem;
+                padding: 0 2rem 1rem 0;
+            }
+        }
+    }
 }

@@ -5,7 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill, RiMastercardLine } from "react-icons/ri";
 import { TbBrandVisa } from "react-icons/tb";
 import { SiDatacamp } from "react-icons/si";
-
+React;
 const Footer = () => {
   return (
     <footer>
@@ -15,14 +15,26 @@ const Footer = () => {
           <p>Həftə içi beş gün </p>
           <p>9:00-dan 18:00-dək </p>
           <div className="logos">
-           <a target="blank" href="https://www.youtube.com/channel/UCxsIp50sKMQ-nmQVhUaFlsQ"><FaYoutube /></a> 
-           <a className="fb" target="blank" href="https://www.facebook.com/maxi.az.shop/"><FaFacebookF /></a> 
-           <a className="ins" target="blank" href="https://www.instagram.com/maxiaz.shop/"><RiInstagramFill /></a> 
-         
-         
-         
-            
-            
+            <a className="ytb"
+              target="blank"
+              href="https://www.youtube.com/channel/UCxsIp50sKMQ-nmQVhUaFlsQ"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              className="fb"
+              target="blank"
+              href="https://www.facebook.com/maxi.az.shop/"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              className="ins"
+              target="blank"
+              href="https://www.instagram.com/maxiaz.shop/"
+            >
+              <RiInstagramFill />
+            </a>
           </div>
         </div>
         <div className="navbar">
@@ -116,34 +128,42 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-        <div className="downFooter">
-          <div className="maxi">
-            <p className="allRight styleFootertext">© 2025 Maxi.az All Rights Reserved</p>
-          </div>
-          <div className="inteqral">
-            <img
-              src="https://maxi.az/local/templates/main/images/integral.png"
-              alt=""
-            />
-            <span className="styleFootertext"> Owned by İntegral</span>
-          </div>
-          <div className="master">
-            <RiMastercardLine className="visas"/>
-            <TbBrandVisa className="visa" />
-          </div>
-          <div className="devo">
-            <a target="blank" className="styleFootertext" href="https://www.aniart.com.ua/">
-              Development by <br /> AniArt
-            </a>
-          </div>
-          <div className="uxui">
-         <a target="blank" href="https://sense.pro/"><SiDatacamp className="ux"/></a> 
-          <span className="styleFootertext">UX/UI design by <br  />Sense Production</span>
-         
-          
-
-          </div>
+      <div className="downFooter">
+        <div className="maxi">
+          <p className="allRight styleFootertext">
+            © 2025 Maxi.az All Rights Reserved
+          </p>
         </div>
+        <div className="inteqral">
+          <img
+            src="https://maxi.az/local/templates/main/images/integral.png"
+            alt=""
+          />
+          <span className="styleFootertext"> Owned by İntegral</span>
+        </div>
+        <div className="master">
+          <RiMastercardLine className="visas" />
+          <TbBrandVisa className="visa" />
+        </div>
+        <div className="devo">
+          <a
+            target="blank"
+            className="styleFootertext"
+            href="https://www.aniart.com.ua/"
+          >
+            Development by <br /> AniArt
+          </a>
+        </div>
+        <div className="uxui">
+          <a target="blank" href="https://sense.pro/">
+            <SiDatacamp className="ux" />
+          </a>
+          <span className="styleFootertext">
+            UX/UI design by <br />
+            Sense Production
+          </span>
+        </div>
+      </div>
     </footer>
   );
 };

@@ -27,7 +27,7 @@ const Header = () => {
         <div className="upHeader">
           <div className="logoNavbar">
             <div className="logo">
-              <a href="./">
+              <a href="/">
                 <img
                   src="https://aem-elektron.az/image/cache/webp/catalog/partners/maxi-az-logo-400x300.webp"
                   alt=""

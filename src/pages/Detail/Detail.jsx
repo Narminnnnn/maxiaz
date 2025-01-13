@@ -1,18 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-import { FaStar } from "react-icons/fa";
 import './detail.css';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { IoInformationCircleSharp } from 'react-icons/io5';
 import { CiMoneyBill } from 'react-icons/ci';
 import { FaManatSign } from 'react-icons/fa6';
+import { useParams } from 'react-router-dom';
+import data from "../Products/Products";
 
 const Detail = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const {id} = useParams();
+    const [dataId, setDataId] = useState([]);
+
+    useEffect(() => {
+        const product = data.find((item) => item.id === parseInt(id));
+        setDataId(product)
+    }, [id])
+
+   
+    
+    
+    
     return (
         <>
             <div className="page-product-detail">
@@ -31,22 +44,22 @@ const Detail = () => {
                             className="mySwiper2"
                         >
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
                             </SwiperSlide>
@@ -62,22 +75,22 @@ const Detail = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                <img src={dataId.image} />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -85,21 +98,17 @@ const Detail = () => {
                         <div className="up">
                             <div className="spanlar">
                                 <span className='zemanet'>12 AY ZEMANET</span>
-                                <span className='stok'>STOKDA VAR</span>
-                                <span className='kod'>Malin kodu: IN000060898</span>
+                                <span className='stok'>{dataId.availability}</span>
+                                <span className='kod'>{dataId.id}</span>
                             </div>
-                            <h2>Smartfon Tecno Phantom Flip V 5G 8GB 256GB NFC Mystic Dawn</h2>
+                            <h2>{dataId.title}</h2>
                             <div className="stars">
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
+                                {dataId.star}
                                 <span className='rey'>rey: 0</span>
                             </div>
                         </div>
                         <div className="bottom">
-                            <h3>1480 <FaManatSign className='manat' /> <IoInformationCircleSharp className='information' />
+                            <h3>{dataId.price}  <IoInformationCircleSharp className='information' />
                                 <div className="ihover">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae assumenda voluptates eveniet, consequuntur</p>
                                 </div> </h3>

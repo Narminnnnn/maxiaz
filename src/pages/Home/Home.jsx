@@ -25,9 +25,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import data from "../Products/Products";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [page, setPage]=useState(1)
   const limit =3;
@@ -341,7 +343,7 @@ const Home = () => {
                 <h3>{product.title}</h3>
                 <div className="priceDetail">
                   <h2>{product.price}</h2>
-                <a href="./detail">   <button className="detaill">Get Detail</button></a>
+                  <button onClick={() => navigate(`/detail/${product.id}`)} className="detaill">Get Detail</button>
                 </div>
               </div>
             ))}

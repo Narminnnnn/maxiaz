@@ -1,10 +1,11 @@
 import React,{ useEffect, useState }  from "react";
 import axios from "axios";
 import "./Search.css";
+import data from "../Products/Products";
 
 const Search = () => {
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [data, setFilteredProducts] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [sortCriteria, setSortCriteria] = useState("");
 
@@ -23,17 +24,17 @@ const Search = () => {
   const sortProducts = (criteria) => {
     let sortedProducts;
     if (criteria === "az-za") {
-      sortedProducts = [...filteredProducts].sort((a, b) =>
+      sortedProducts = [...data].sort((a, b) =>
         a.title.localeCompare(b.title)
       );
     } else if (criteria === "za-az") {
-      sortedProducts = [...filteredProducts].sort((a, b) =>
+      sortedProducts = [...data].sort((a, b) =>
         b.title.localeCompare(a.title)
       );
     } else if (criteria === "price-asc") {
-      sortedProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
+      sortedProducts = [...data].sort((a, b) => a.price - b.price);
     } else if (criteria === "price-desc") {
-      sortedProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
+      sortedProducts = [...data].sort((a, b) => b.price - a.price);
     }
     setSortCriteria(criteria);
     setFilteredProducts(sortedProducts);
@@ -76,7 +77,7 @@ const Search = () => {
       </div>
 
       <div id="product-list">
-        {filteredProducts.map((product) => (
+        {data.map((product) => (
           <div key={product.id} className="Wishlist">
             <div className="containerWish">
               <div className="boxes">

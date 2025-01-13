@@ -12,7 +12,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setIsFixed(true); 
+        setIsFixed(true);
       } else {
         setIsFixed(false);
       }
@@ -21,17 +21,18 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
     <header>
       <div className="contaierHeader">
         <div className="upHeader">
           <div className="logoNavbar">
             <div className="logo">
-             <a href="./"><img
-                src="https://aem-elektron.az/image/cache/webp/catalog/partners/maxi-az-logo-400x300.webp"
-                alt=""
-              /></a> 
+              <a href="./">
+                <img
+                  src="https://aem-elektron.az/image/cache/webp/catalog/partners/maxi-az-logo-400x300.webp"
+                  alt=""
+                />
+              </a>
             </div>
             <nav>
               <ul>
@@ -74,7 +75,9 @@ const Header = () => {
             <div className="searchKataloq">
               <div className="kataloq">
                 <LuLayoutGrid className="grids" />
-                <span className="mallar">Malların kataloqu </span>
+                <a href="/search">
+                  <span className="mallar">Malların kataloqu </span>
+                </a>
               </div>
               <div className="searchContainer">
                 <div className="searchDiv">
@@ -86,7 +89,7 @@ const Header = () => {
 
             <div className="enter">
               <div className="hesab">
-                <BsPersonCircle className="person"/>
+                <BsPersonCircle className="person" />
                 <span> Hesaba giriş</span>
               </div>
 
@@ -94,8 +97,9 @@ const Header = () => {
                 <LiaBalanceScaleLeftSolid className="scales" />
               </div>
               <div className="wishList styleEnter ">
-                <a href="./wishlist"><FaRegHeart className="heart"/></a>
-                
+                <a href="./wishlist">
+                  <FaRegHeart className="heart" />
+                </a>
               </div>
             </div>
           </div>

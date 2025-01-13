@@ -153,6 +153,7 @@ header {
         width: 85%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         .searchKataloq {
             display: flex;
@@ -173,6 +174,9 @@ header {
                 background-color: #232222;
                 height: 100%;
                 width: 314px;
+                a{
+                    color: white;
+                }
 
                 .grids {
                     margin-right: 10px;

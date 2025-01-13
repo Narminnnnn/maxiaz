@@ -88,10 +88,12 @@ const Header = () => {
             </div>
 
             <div className="enter">
-              <div className="hesab">
-                <BsPersonCircle className="person" />
-                <span> Hesaba giriş</span>
-              </div>
+            <a href="/FormRegister">
+                <div className="hesab" >
+                  <BsPersonCircle className="person" />
+                  <span> Hesaba giriş</span>
+                </div>
+              </a>
 
               <div className="terezi styleEnter">
                 <LiaBalanceScaleLeftSolid className="scales" />

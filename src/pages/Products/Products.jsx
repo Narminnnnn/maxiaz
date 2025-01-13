@@ -3,6 +3,7 @@ import React from 'react'
 
  const data = [
     {
+      id: 1,
       title: 'Dondurucu kamera KRAFT BD (W)-135QX ',
       image: 'https://maxi.az/upload/resize_cache/webp/iblock/3ac/hstort0igu80atqk0m59al5pcyd97501/268x300q100-dondurucu_kamera_kraft_bd_w_135qx_detail.webp',
       newTag: 'YENILIK',
@@ -12,6 +13,7 @@ import React from 'react'
       price: '395.89 ₼',
     },
     {
+      id: 2,
       title: 'Dondurucu kamera KRAFT KF-HS 125W ',
       image: 'https://maxi.az/upload/resize_cache/webp/iblock/93f/ord0awpp2h9j2bcn1mu4ut3zppx0bxve/268x300q100-dondurucu_kamera_kraft_kf_hs_125w_detail.webp',
       newTag: 'YENILIK',
@@ -21,6 +23,7 @@ import React from 'react'
       price: '395.89 ₼',
     },
     {
+      id: 3,
       title: 'Dondurucu kamera KRAFT BD (W)-605QX ',
       image: 'https://maxi.az/upload/resize_cache/webp/iblock/4c7/gol7hsbukz2qt3yturkub6673duw6s7z/268x300q100-dondurucu_kamera_kraft_bd_w_605qx_detail.webp',
       newTag: 'YENILIK',
@@ -29,7 +32,7 @@ import React from 'react'
       reviews: 3,
       price: '1403.49 ₼',
     },
-    {
+    { id: 4,
       title: 'Dondurucu kamera KRAFT BD (W)-365QX ',
       image: 'https://maxi.az/upload/resize_cache/webp/iblock/74f/azw3iua3vgllyi1fw413wa7lhwoimj4j/268x300q100-dondurucu_kamera_kraft_bd_w_365qx_detail.webp',
       newTag: 'YENILIK',
@@ -39,6 +42,7 @@ import React from 'react'
       price: '794.09 ₼',
     },
     {
+      id: 5,
       title: 'Dondurucu kamera KRAFT BD (W)-310QX',
       image: 'https://maxi.az/upload/resize_cache/webp/iblock/6a2/3ciybu3rruru2613ylgxxuwkor35lbsn/268x300q100-dondurucu_kamera_kraft_bd_w_310qx_detail.webp',
       newTag: 'YENILIK',
@@ -47,7 +51,7 @@ import React from 'react'
       reviews: 7,
       price: '700.59 ₼',
     },
-    {
+    { id: 6,
         title: 'Enerji yığma cihazı Bosch GAL 18V-20 2607226281',
         image: 'https://maxi.az/upload/resize_cache/iblock/0d1/tkcbbn90laosaffl6ga10qd7af5v4i2e/268_300_140cd750bba9870f18aada2478b24840a/enerji_y_ma_cihaz_bosch_gal_18v_20_2607226281_detail.webp',
         newTag: 'YENILIK',
@@ -57,6 +61,7 @@ import React from 'react'
         price: '148.39 ₼',
       },
       {
+        id: 7,
         title: 'Enerji yığma cihazı Bosch GAL 18V-40 1600A019RJ',
         image: 'https://maxi.az/upload/resize_cache/iblock/e67/kcw4nh4n8epetp24h3fjk037cbk649zy/268_300_140cd750bba9870f18aada2478b24840a/enerji_y_ma_cihaz_bosch_gal_18v_40_1600a019rj_detail.webp',
         newTag: 'YENILIK',
@@ -66,6 +71,7 @@ import React from 'react'
         price: '118.69 ₼',
       },
       {
+        id: 8,
         title: 'Akkumulyator Bosch 18 V, 2.0 Ah, Li-Ion 1607A3506A',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/a7b/qyhukrq3fs6c5agr90y9wy10w9zc3wse/268x300q100-akkumulyator_bosch_18_v_2_0_ah_li_ion_1607a3506a_detail.webp',
         newTag: 'YENILIK',
@@ -75,6 +81,7 @@ import React from 'react'
         price: '179.19 ₼',
       },
       {
+        id: 9,
         title: 'Akkumulyator Bosch 12V 3As 1600A00X79',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/72f/5uy5oo5chawio9iviscd7wmvdm3a42di/268x300q100-akkumulyator_bosch_12v_3as_1600a00x79_detail.webp',
         newTag: 'YENILIK',
@@ -84,6 +91,7 @@ import React from 'react'
         price: '139.59 ₼',
       },
       {
+        id: 10,
         title: 'Enerji yığma cihazı Bosch GAL 12V-40 1600A019R3',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/377/00o1j2wccry1fn6nu94x978ns9u257r3/268x300q100-enerji_y_ma_cihaz_bosch_gal_12v_40_1600a019r3_detail.webp',
         newTag: 'YENILIK',
@@ -93,6 +101,7 @@ import React from 'react'
         price: '104.39 ₼',
       },
       {
+        id: 11,
         title: 'Akumulyatorlu bolt çevirən Bosch GO 2 06019H2103',
         image: 'https://maxi.az/upload/resize_cache/iblock/641/9a0hm3imzn5b0qj29c1xlowiyj757i5v/268_300_140cd750bba9870f18aada2478b24840a/akumulyatorlu_bolt_evir_n_bosch_go_2_06019h2103_detail.webp',
         newTag: 'YENILIK',
@@ -101,7 +110,7 @@ import React from 'react'
         reviews: 7,
         price: '156.09 ₼',
       },
-      {
+      {id: 12,
         title: 'Akumulyatorlu bolt çevirən Bosch GO 2 06019H2100',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/b5e/ldpsq1u8qq9mq6x15l5l91ofp6cdftsl/268x300q100-akumulyatorlu_bolt_evir_n_bosch_go_2_06019h2100_detail.webp',
         newTag: 'YENILIK',
@@ -111,6 +120,7 @@ import React from 'react'
         price: '138.49 ₼',
       },
       {
+        id: 13,
         title: 'Akumulyatorlu qaykaburan Bosch Professional GDS 18V-400 06019K0020',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/dbe/45vfbt4y6d9dj3oxkcdnmkr71s94uuhk/268x300q100-akumulyatorlu_qaykaburan_bosch_professional_gds_18v_400_06019k0020_detail.webp',
         newTag: 'YENILIK',
@@ -120,6 +130,7 @@ import React from 'react'
         price: '965.69 ₼',
       },
       {
+        id: 14,
         title: 'Akumulyatorlu qaykaburan Bosch GDS 18V-1050 H 06019J8502',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/8f4/6l9uiy2nsm00ddieihpbkjnwfgmg03pw/268x300q100-akumulyatorlu_qaykaburan_bosch_gds_18v_1050_h_06019j8502_detail.webp',
         newTag: 'YENILIK',
@@ -129,6 +140,7 @@ import React from 'react'
         price: '1582.79 ₼',
       },
       {
+        id: 15,
         title: 'Drel Bosch GSB 24-2 060119C801',
         image: 'https://maxi.az/upload/resize_cache/iblock/e08/wr6dklyxi8o2p3g9noyy2kkoo44mjek3/268_300_140cd750bba9870f18aada2478b24840a/drel_bosch_gsb_24_2_060119c801_detail.webp',
         newTag: 'YENILIK',
@@ -138,6 +150,7 @@ import React from 'react'
         price: '689.59 ₼',
       },
       {
+        id: 16,
         title: 'Pistonlu mişar Bosch GSA 120 06016B1020',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/fb3/zlqbg6mk2npibiotsz9pnjixwapno5j3/268x300q100-pistonlu_mi_ar_bosch_gsa_120_06016b1020_detail.webp',
         newTag: 'YENILIK',
@@ -147,6 +160,7 @@ import React from 'react'
         price: '494.89 ₼',
       },
       {
+        id: 17,
         title: 'Pardaqlama maşını Bosch GWS 30-230 B 06018G1000',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/db4/kxidu18tu91fg0fl88lg04z7zrf57qts/268x300q100-pardaqlama_ma_n_bosch_gws_30_230_b_06018g1000_detail.webp',
         newTag: 'YENILIK',
@@ -155,7 +169,7 @@ import React from 'react'
         reviews: 7,
         price: '469.59 ₼',
       },
-      {
+      {id: 18,
         title: 'Pardaqlama maşını divar və tavan üçün Bosch GTR 550 06017D4020',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/b7d/auzm1qu1v7o4y701x846zndr2q6nbjgp/268x300q100-pardaqlama_ma_n_al_pan_n_bosch_gtr_550_06017d4020_detail.webp',
         newTag: 'YENILIK',
@@ -165,6 +179,7 @@ import React from 'react'
         price: '787.49 ₼',
       },
       {
+        id: 19,
         title: 'Bağ qayçısı Bosch Pro Pruner 06019K1020',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/963/3xujc3u2tdxtyup0wgxczpfk47d1u78o/268x300q100-ba_qay_s_bosch_pro_pruner_06019k1020_detail.webp',
         newTag: 'YENILIK',
@@ -174,6 +189,7 @@ import React from 'react'
         price: '414.59 ₼',
       },
       {
+        id: 20,
         title: 'Elektrik mişar Bosch UniversalChain 18, 06008B8000',
         image: 'https://maxi.az/upload/resize_cache/webp/iblock/02d/2wd9cn4bxb1d0udblmh8xrh51e5jxrec/268x300q100-elektrik_mi_ar_bosch_universalchain_18_06008b8000_detail.webp',
         newTag: 'YENILIK',

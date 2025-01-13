@@ -14,7 +14,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
-
+.prodactsbox{
+    display: flex;
+    justify-content: center;
+   
+}
 .spanlar {
     display: flex;
     gap: 30px;

@@ -8,8 +8,11 @@ import Wishlist from "./pages/WishList/Wishlist";
 import Deliver from "./pages/catdirilma/Deliver";
 import About from "./pages/About/About";
 import Search from "./pages/Search/Search";
+import FormRegister from './pages/FormRegister/FormRegister';
 
 const App = () => {
+
+  
   return (
     <BrowserRouter>
       <Header />
@@ -20,6 +23,8 @@ const App = () => {
         <Route path="/deliver" element={<Deliver />} />
         <Route path="/about" element={<About />} />
         <Route path="/search" element={<Search />} />
+        <Route path='/FormRegister' element={<FormRegister />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

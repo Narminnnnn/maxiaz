@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { CgSmartHomeWashMachine } from "react-icons/cg";
-import { FaCar, FaLongArrowAltRight, FaTv } from "react-icons/fa";
+import { FaCar, FaHeart, FaLongArrowAltRight, FaTv } from "react-icons/fa";
 import {
   GiDelicatePerfume,
   GiDrill,
@@ -26,11 +26,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import data from "../Products/Products";
 
+
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const [page, setPage]=useState(1)
+  const limit =3;
   useEffect(() => {
-    setProducts(data);
-  },[])
+    const start = (page - 1) * limit;
+    const end = page * limit;
+    setProducts(data.slice(0, end)); 
+  }, [page]);
+  
+  const loadMore = () => {
+    setPage((prevPage) => prevPage + 1);
+  }
   return (
     <>
       <section className="sectionOne">
@@ -40,14 +49,12 @@ const Home = () => {
               <ul>
                 <li>
                   <a href="">
-                    
                     <LuCirclePercent />
                     MAXİ endirimlər
                   </a>
                 </li>
                 <li>
                   <a href="">
-                   
                     <SiMeta />
                     Azercell
                   </a>
@@ -316,119 +323,30 @@ const Home = () => {
         </div>
         <div className="containerthree">
           <div className="productboxes">
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/93f/ord0awpp2h9j2bcn1mu4ut3zppx0bxve/268x300q100-dondurucu_kamera_kraft_kf_hs_125w_detail.webp"
-                  alt=""
-                />
+            {products.map((product) => (
+              <div className="productbox" key={product.id}>
+                <div className="prImage">
+                  <FaHeart className="heartIcon" />
+
+                  <img src={product.image} alt={product.title} />
+                </div>
+                <div className="spans">
+                  {product.isNew && <span>Yenilik</span>}
+                  {product.availability ? (
+                    <span>Mövcuddur</span>
+                  ) : (
+                    <span>Mövcud deyil</span>
+                  )}
+                </div>
+                <h3>{product.title}</h3>
+                <div className="priceDetail">
+                  <h2>{product.price}</h2>
+                <a href="./detail">   <button className="detaill">Get Detail</button></a>
+                </div>
               </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/iblock/0d1/tkcbbn90laosaffl6ga10qd7af5v4i2e/268_300_140cd750bba9870f18aada2478b24840a/enerji_y_ma_cihaz_bosch_gal_18v_20_2607226281_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            {/* <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/3ac/hstort0igu80atqk0m59al5pcyd97501/268x300q100-dondurucu_kamera_kraft_bd_w_135qx_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/72f/5uy5oo5chawio9iviscd7wmvdm3a42di/268x300q100-akkumulyator_bosch_12v_3as_1600a00x79_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/dbe/45vfbt4y6d9dj3oxkcdnmkr71s94uuhk/268x300q100-akumulyatorlu_qaykaburan_bosch_professional_gds_18v_400_06019k0020_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/4c7/gol7hsbukz2qt3yturkub6673duw6s7z/268x300q100-dondurucu_kamera_kraft_bd_w_605qx_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/iblock/e08/wr6dklyxi8o2p3g9noyy2kkoo44mjek3/268_300_140cd750bba9870f18aada2478b24840a/drel_bosch_gsb_24_2_060119c801_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div>
-            <div className="productbox">
-              <div className="prImage">
-                <img
-                  src="https://maxi.az/upload/resize_cache/webp/iblock/02d/2wd9cn4bxb1d0udblmh8xrh51e5jxrec/268x300q100-elektrik_mi_ar_bosch_universalchain_18_06008b8000_detail.webp"
-                  alt=""
-                />
-              </div>
-              <div className="spans">
-                <span>Yenilik</span>
-                <span>Movcudluq</span>
-              </div>
-              <h3>Dondurucu kamera KRAFT KF-HS 125W</h3>
-              <h2>395.89 AZN</h2>
-            </div> */}
+            ))}
           </div>
+          <button className="more" onClick={loadMore}> More than</button>
         </div>
       </section>
       <section className="sectionfour">
